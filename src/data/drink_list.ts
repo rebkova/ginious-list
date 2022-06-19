@@ -1,4 +1,4 @@
-[
+export const drinkList = [
   {
     "idDrink": "17222",
     "strDrink": "A1",
