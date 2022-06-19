@@ -1,5 +1,3 @@
-// input: cocktail name list
-// output: name and image
 import React, { ReactElement } from "react";
 
 import { drinkList } from "../data/drink_list";

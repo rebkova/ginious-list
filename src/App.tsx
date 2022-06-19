@@ -4,8 +4,7 @@ import * as React from "react";
 import PublicCocktailList from "./components/PublicCocktailList";
 
 interface Props {
-  name:
-  string
+  name: string,
 }
 
 class App extends React.Component<Props> {
