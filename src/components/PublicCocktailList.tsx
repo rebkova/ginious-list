@@ -1,6 +1,17 @@
-// renders the whole list everybody can see (from the API)
-// StartPage contains Filter Section and CocktailList components
+// displays all cocktails from the original API (in a carousel ? 
+// = > is that the best display method for 100 cocktails?)
 
-// StartPage has a list of cocktails
-// one can filter based on all/alcohol/non-alcohol drinks
-// 
+import React, { ReactElement } from "react";
+
+import CarouselCard from "./CarouselCard";
+
+const PublicCocktailList = (): ReactElement => {
+
+
+  return (<div>
+    <CarouselCard />
+  </div>)
+}
+
+
+export default PublicCocktailList;
