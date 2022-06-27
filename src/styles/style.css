@@ -1,0 +1,20 @@
+/* TODO: move this style somewhere else? */
+:global body {
+   margin: 0;
+   background-color: orange;
+}
+
+h1 {
+   color: white;
+   background-color: black;
+}
+
+
+/* here are all the GLOBAL styles  */
+/* Abstracts */
+/* Base */
+/* Components */
+/* Layout */
+/* Pages */
+/* Themes */
+/* Vendors */
