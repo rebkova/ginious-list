@@ -27,7 +27,7 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          // 'style-loader', // injects CSS into the DOM
+          'style-loader', // injects CSS into the DOM
           'css-module-typecript-loader',
           {
             loader: 'css-loader',
@@ -36,9 +36,6 @@ const config = {
               modules: true, // enables CSS modules
             },
           },
-
-          // 'sass-loader',
-          // 'css-module-typecript-loader',
         ],
       },
     ]
@@ -56,6 +53,7 @@ const config = {
     new CleanWebpackPlugin(), // plugin to delete build 'dist' folder after every successful rebuild
   ],
   resolve: {
+    modules: ['node_modules'], // finds node_modules and prevents a major f*up. yay. 
     extensions: [
       '.tsx',
       '.ts',
