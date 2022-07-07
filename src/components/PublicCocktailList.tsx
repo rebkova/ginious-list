@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-import CarouselCard from "./CarouselCard";
+import CarouselCard from "./carousel_card/CarouselCard";
 
 const PublicCocktailList = (): ReactElement => {
 

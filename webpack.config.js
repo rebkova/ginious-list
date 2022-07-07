@@ -28,12 +28,15 @@ const config = {
         test: /\.css$/,
         use: [
           'style-loader', // injects CSS into the DOM
-          'css-module-typecript-loader',
           {
             loader: 'css-loader',
             options: {
               importLoaders: 1, // nr of loaders applied before CSS modules and the @import rule
               modules: true, // enables CSS modules
+              // localIdentName: '[name]_[local]_[hash:base64:5]', // this is not working!
+              // modules: {
+              //   localIdentName: '[name]__[local]___[hash:base64:5]'
+              // }
             },
           },
         ],

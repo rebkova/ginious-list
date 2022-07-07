@@ -1,12 +1,7 @@
 /* TODO: move this style somewhere else? */
-:global body {
+body {
    margin: 0;
    background-color: orange;
-}
-
-h1 {
-   color: white;
-   background-color: black;
 }
 
 
