@@ -3,6 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
+const isDev = process.env.NODE_ENV === 'development';
+
 const config = {
   entry: [
     './src/index.tsx',
@@ -32,11 +34,10 @@ const config = {
             loader: 'css-loader',
             options: {
               importLoaders: 1, // nr of loaders applied before CSS modules and the @import rule
-              modules: true, // enables CSS modules
-              // localIdentName: '[name]_[local]_[hash:base64:5]', // this is not working!
-              // modules: {
-              //   localIdentName: '[name]__[local]___[hash:base64:5]'
-              // }
+              // enables CSS modules
+              modules: {
+                localIdentName: isDev ? '[local]--[hash:base64:5]' : '[hash:base64:5]',
+              }
             },
           },
         ],
