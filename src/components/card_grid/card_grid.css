@@ -1,0 +1,6 @@
+.cardGrid {
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
