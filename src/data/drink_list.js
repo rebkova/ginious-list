@@ -5300,3 +5300,5 @@ export const drinkList = [
     "dateModified": "2017-09-08 18:03:36"
   }
 ]
+
+// module.exports = drinkList;

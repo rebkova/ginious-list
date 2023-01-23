@@ -1,6 +1,7 @@
 import sqlite3 from "sqlite3";
-
 import { drinkList } from "./src/data/drink_list.js";
+// const sqlite3 = require('sqlite3');
+// const drinkList = require("./src/data/drink_list.js");
 
 const sqlite = sqlite3.verbose();
 let sql;
@@ -16,7 +17,6 @@ const db = new sqlite.Database(
 
 // I deal with the relational db
 // many-to-many table relationships
-//
 
 // 4 main actions in SQL: select, insert, update, delete
 
@@ -24,6 +24,9 @@ const db = new sqlite.Database(
 // 1. populate 'category' table
 // loop over the data
 // assign strCategory value to name category in the new table
+
+// set autoincrement on category id!
+
 function assignCategory(data) {
   data.forEach((d) => {
     let category = {
